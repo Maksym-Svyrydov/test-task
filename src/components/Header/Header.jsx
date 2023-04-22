@@ -4,10 +4,10 @@ export const AppBar = () => {
   return (
     <Header>
       <Section>
-        <Title>Tasks</Title>
+        <Title>Users</Title>
       </Section>
       <Section>
-        <Title>Filter by status</Title>
+        <Title>Filter by users status</Title>
       </Section>
     </Header>
   );
