@@ -18,13 +18,7 @@ const UsersList = () => {
   return (
     <div>
       {users.map(({ id, avatar, name, followers, tweets }) => (
-        <User
-          key={id}
-          avatar={avatar}
-          name={name}
-          followers={followers}
-          tweets={tweets}
-        />
+        <User key={id} avatar={avatar} followers={followers} tweets={tweets} />
       ))}
       <button onClick={loadMore}>Load more</button>
     </div>
