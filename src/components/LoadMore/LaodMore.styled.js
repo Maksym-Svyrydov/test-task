@@ -1,25 +1,44 @@
 import styled from 'styled-components';
 
-export const LoarMoreBtn = styled.button`
-  padding: 8px 16px;
-  margin: 0 auto 16px auto;
-  border-radius: 2px;
-  background-color: #3f51b5;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+export const LoadMore = styled.button`
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  color: #fff;
-  border: 0;
-  text-decoration: none;
-  cursor: pointer;
-  font-family: inherit;
+  align-items: center;
+  padding: 14px 28px;
+  gap: 6px;
+  position: relative;
+  width: 196px;
+  height: 50px;
+  background: linear-gradient(
+    114.99deg,
+    #471ca9 -0.99%,
+    #5736a3 54.28%,
+    #4b2a99 78.99%
+  );
+  font-style: normal;
+  font-weight: 600;
   font-size: 18px;
-  min-width: 180px;
-  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
-    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-  & :focus,
-  :hover {
-    background-color: #303f9f;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: tomato;
+  flex: none;
+  border: none;
+  color: #373737;
+  background: #ebd8ff;
+  box-shadow: -2.5777px 6.87386px 20.6216px rgba(0, 0, 0, 0.23);
+  border-radius: 20px;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 50ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    background: linear-gradient(
+      114.99deg,
+      #471ca9 -0.99%,
+      #5736a3 54.28%,
+      #4b2a99 78.99%
+    );
+    color: #ebd8ff;
+    box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
   }
 `;

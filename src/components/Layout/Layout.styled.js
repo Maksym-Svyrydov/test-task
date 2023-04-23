@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
 export const Wrap = styled.main`
-  display: grid;
-  gap: 16px;
-  max-width: 800px;
+  display: flex;
+  flex-direction: raw;
+  flex-wrap: wrap;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 16px;
-  background-color: #766a92;
+  ${'' /* background-color: #766a92; */}
 `;

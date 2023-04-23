@@ -1,27 +1,44 @@
 import { useState, useEffect } from 'react';
-import { fetchUsers } from '../../API/AxiosAPI';
+import { fetchUsers, getTotalUsers } from '../../API/AxiosAPI';
 import User from '../User/User';
-
+import { UserList } from './UsersList.styled';
+import { LoadMore } from '../LoadMore/LaodMore.styled';
 const UsersList = () => {
   const [users, setUsers] = useState([]);
-  const [count, setCount] = useState(3);
+  const [page, setPage] = useState(3);
+  const [totalPage, setTotalpage] = useState([]);
 
-  useEffect(() => {
-    fetchUsers(count).then((result) => {
-      setUsers(result);
-    });
-  }, [count]);
-  const loadMore = () => {
-    setCount(count + 1);
+  const onloadMore = () => {
+    setPage(page + 3);
   };
 
+  useEffect(() => {
+    fetchUsers(page).then((result) => {
+      setUsers(result);
+    });
+  }, [page]);
+  useEffect(() => {
+    getTotalUsers().then((result) => {
+      setTotalpage(result.length);
+    });
+  });
+
   return (
-    <div>
-      {users.map(({ id, avatar, name, followers, tweets }) => (
-        <User key={id} avatar={avatar} followers={followers} tweets={tweets} />
+    <UserList>
+      {users.map(({ id, avatar, followers, tweets, followStatus }) => (
+        <User
+          key={id}
+          id={id}
+          avatar={avatar}
+          followers={followers}
+          tweets={tweets}
+          followStatus={followStatus}
+        />
       ))}
-      <button onClick={loadMore}>Load more</button>
-    </div>
+      {page < totalPage && (
+        <LoadMore onClick={onloadMore}>Load More...</LoadMore>
+      )}
+    </UserList>
   );
 };
 
