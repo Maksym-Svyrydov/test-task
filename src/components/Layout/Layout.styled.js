@@ -6,6 +6,4 @@ export const Wrap = styled.main`
   flex-wrap: wrap;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 16px;
-  ${'' /* background-color: #766a92; */}
 `;

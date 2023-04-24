@@ -6,5 +6,13 @@ export const UserList = styled.ul`
   justify-content: center;
   gap: 48px;
   padding: 0px;
-  margin-top: 48px;
+  margin-top: 148px;
+`;
+export const Wrapper = styled.div`
+   {
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
 `;

@@ -6,6 +6,9 @@ export const LoadMore = styled.button`
   justify-content: center;
   align-items: center;
   padding: 14px 28px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 48px;
   gap: 6px;
   position: relative;
   width: 196px;
@@ -21,7 +24,6 @@ export const LoadMore = styled.button`
   font-size: 18px;
   line-height: 22px;
   text-transform: uppercase;
-  color: tomato;
   flex: none;
   border: none;
   color: #373737;
