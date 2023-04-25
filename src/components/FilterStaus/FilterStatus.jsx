@@ -17,7 +17,7 @@ export const FilterStarus = ({ handleFilter }) => {
   return (
     <Wrapper>
       <Section>
-        <Title>Filter by users status</Title>
+        <Title>Filter by users status:</Title>
         <GoBack>
           <Link
             style={{

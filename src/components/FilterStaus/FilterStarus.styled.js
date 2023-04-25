@@ -32,6 +32,7 @@ export const Title = styled.p`
   justify-content: flex-start;
   margin: 0;
   font-size: 26px;
+  padding: 0px 0px 0px 12px;
 `;
 export const AllBtn = styled.button`
   display: flex;
