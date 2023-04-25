@@ -23,7 +23,6 @@ export const SectionFilters = styled.section`
   max-width: 1400px;
   gap: 24px;
   justify-content: space-evenly;
-
   margin-bottom: 24px;
 `;
 
