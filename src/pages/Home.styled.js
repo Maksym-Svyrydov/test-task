@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-
 export const Wrapper = styled.div`
   max-width: 1400px;
   height: 550px;
@@ -20,5 +19,4 @@ export const Page = styled.div`
   text-transform: uppercase;
   color: #373737;
 `;
-
 export const IMG = styled.img``;
