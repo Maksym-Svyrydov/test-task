@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.header`
+export const Wrapper = styled.div`
+  max-width: 1400px;
   justify-content: space-between;
-  position: fixed;
   display: flex;
   z-index: 2;
   flex-direction: column;
@@ -13,19 +13,21 @@ export const Wrapper = styled.header`
 `;
 export const Section = styled.section`
   display: flex;
+  width: 1400px;
   padding: 0px;
   margin-bottom: 12px;
+  justify-content: space-between;
 `;
 export const SectionFilters = styled.section`
   display: flex;
-  width: 1400px;
+  max-width: 1400px;
   gap: 24px;
   justify-content: space-evenly;
 
   margin-bottom: 24px;
 `;
 
-export const Title = styled.h2`
+export const Title = styled.p`
   display: flex;
   justify-content: flex-start;
   margin: 0;
@@ -137,4 +139,14 @@ export const FollowingsBtn = styled.button`
     color: #ebd8ff;
     box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
   }
+`;
+export const GoBack = styled.div`
+  display: flex;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid gray;
+  border-radius: 8px;
+  margin: 5px 10px;
+  padding: 4px;
 `;

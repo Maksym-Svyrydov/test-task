@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-// export const Wrapp = styled.div``;
+
 export const ButtonFollow = styled.button`
   display: flex;
   flex-direction: row;

@@ -1,3 +1,5 @@
+import { Link, useLocation } from 'react-router-dom';
+import { useRef } from 'react';
 import {
   Wrapper,
   Section,
@@ -6,13 +8,32 @@ import {
   SectionFilters,
   FollowBtn,
   FollowingsBtn,
+  GoBack,
 } from './FilterStarus.styled';
 
 export const FilterStarus = ({ handleFilter }) => {
+  const location = useLocation();
+  const backLinkHref = useRef(location.state?.from ?? '/');
   return (
     <Wrapper>
       <Section>
         <Title>Filter by users status</Title>
+        <GoBack>
+          <Link
+            style={{
+              display: 'flex',
+              textDecoration: 'none',
+              fontStyle: 'normal',
+              fontWeight: '600',
+              fontSize: '18px',
+              lineHeight: '22px',
+              textTransform: 'uppercase',
+            }}
+            to={backLinkHref.current}
+          >
+            Go BACK
+          </Link>
+        </GoBack>
       </Section>
       <SectionFilters>
         <AllBtn
