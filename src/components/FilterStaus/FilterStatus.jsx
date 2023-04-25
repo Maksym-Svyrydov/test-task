@@ -18,32 +18,31 @@ export const FilterStarus = ({ handleFilter }) => {
   };
   return (
     <Wrapper>
-      <Section>
+      <div>
         <Title>Filter by users status:</Title>
-        <GoBack>
-          <Link
-            style={{
-              display: 'flex',
-              textDecoration: 'none',
-              fontStyle: 'normal',
-              fontWeight: '600',
-              fontSize: '18px',
-              lineHeight: '22px',
-              textTransform: 'uppercase',
-            }}
-            to={backLinkHref.current}
-          >
-            Go BACK
-          </Link>
-        </GoBack>
-      </Section>
-      <SectionFilters>
         <DropDown onChange={handleSelectChange}>
           <option value="">All</option>
           <option value="false">Follow</option>
           <option value="true">Following</option>
         </DropDown>
-      </SectionFilters>
+      </div>
+
+      <GoBack>
+        <Link
+          style={{
+            display: 'flex',
+            textDecoration: 'none',
+            fontStyle: 'normal',
+            fontWeight: '600',
+            fontSize: '18px',
+            lineHeight: '22px',
+            textTransform: 'uppercase',
+          }}
+          to={backLinkHref.current}
+        >
+          Go BACK
+        </Link>
+      </GoBack>
     </Wrapper>
   );
 };
