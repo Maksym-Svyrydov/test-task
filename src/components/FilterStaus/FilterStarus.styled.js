@@ -32,14 +32,13 @@ export const GoBack = styled.div`
   height: 35px;
   align-items: center;
   justify-content: center;
-  border: 4px solid gray;
+  border: 4px solid #5736a3;
   border-radius: 11px;
   margin: auto 10px;
   padding: 4px;
 `;
 export const DropDown = styled.select`
   display: flex;
-  border: 4px solid #5736a3;
   margin: 8px 8px;
   padding: 14px 28px 14px 28px;
   box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
@@ -49,11 +48,7 @@ export const DropDown = styled.select`
   font-size: 18px;
   line-height: 22px;
   text-transform: uppercase;
-  color: #373737;
-  border: #5736a3;
   cursor: pointer;
-  background-color: #ebd8ff;
-  &:active {
-    background: #5cd3a8;
-  }
+  background: #5736a3;
+  color: #ebd8ff;
 `;

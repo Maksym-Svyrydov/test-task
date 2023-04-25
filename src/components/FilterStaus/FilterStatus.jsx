@@ -19,7 +19,6 @@ export const FilterStarus = ({ handleFilter }) => {
           <option value="true">Following</option>
         </DropDown>
       </div>
-
       <GoBack>
         <Link
           style={{
