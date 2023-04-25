@@ -21,8 +21,7 @@ export const Section = styled.section`
 export const SectionFilters = styled.section`
   display: flex;
   max-width: 1400px;
-  gap: 24px;
-  justify-content: space-evenly;
+  padding: 0px;
   margin-bottom: 24px;
 `;
 
@@ -33,113 +32,7 @@ export const Title = styled.p`
   font-size: 26px;
   padding: 0px 0px 0px 12px;
 `;
-export const AllBtn = styled.button`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 14px 28px;
-  gap: 6px;
-  width: 196px;
-  height: 50px;
-  background: #ebd8ff;
-  box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
-  border-radius: 10.3108px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
-  text-transform: uppercase;
-  color: #373737;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 50ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover {
-    background: linear-gradient(
-      114.99deg,
-      #471ca9 -0.99%,
-      #5736a3 54.28%,
-      #4b2a99 78.99%
-    );
-    color: #ebd8ff;
-    box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
-  }
-`;
 
-export const FollowBtn = styled.button`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 14px 28px;
-  gap: 6px;
-  width: 196px;
-  height: 50px;
-  background: #ebd8ff;
-  box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
-  border-radius: 10.3108px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
-  text-transform: uppercase;
-  color: #373737;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 50ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover {
-    background: linear-gradient(
-      114.99deg,
-      #471ca9 -0.99%,
-      #5736a3 54.28%,
-      #4b2a99 78.99%
-    );
-    color: #ebd8ff;
-    box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
-  }
-`;
-
-export const FollowingsBtn = styled.button`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 14px 28px;
-  gap: 6px;
-  width: 196px;
-  height: 50px;
-  background: #ebd8ff;
-  box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
-  border-radius: 10.3108px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
-  text-transform: uppercase;
-  color: #373737;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 50ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover {
-    background: linear-gradient(
-      114.99deg,
-      #471ca9 -0.99%,
-      #5736a3 54.28%,
-      #4b2a99 78.99%
-    );
-    color: #ebd8ff;
-    box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
-  }
-`;
 export const GoBack = styled.div`
   display: flex;
   width: 100px;
@@ -149,4 +42,24 @@ export const GoBack = styled.div`
   border-radius: 8px;
   margin: 5px 10px;
   padding: 4px;
+`;
+export const DropDown = styled.select`
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid #ccc;
+  padding: 14px 28px 14px 28px;
+  box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
+  border-radius: 10.3108px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #373737;
+  cursor: pointer;
+  background-color: #ebd8ff;
+  &:active {
+    background: #5cd3a8;
+  }
 `;

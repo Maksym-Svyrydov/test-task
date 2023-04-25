@@ -4,16 +4,18 @@ import {
   Wrapper,
   Section,
   Title,
-  AllBtn,
   SectionFilters,
-  FollowBtn,
-  FollowingsBtn,
+  DropDown,
   GoBack,
 } from './FilterStarus.styled';
 
 export const FilterStarus = ({ handleFilter }) => {
   const location = useLocation();
   const backLinkHref = useRef(location.state?.from ?? '/');
+
+  const handleSelectChange = (event) => {
+    handleFilter(event.target.value);
+  };
   return (
     <Wrapper>
       <Section>
@@ -36,35 +38,11 @@ export const FilterStarus = ({ handleFilter }) => {
         </GoBack>
       </Section>
       <SectionFilters>
-        <AllBtn
-          onClick={(e) => {
-            handleFilter(e.currentTarget.value);
-          }}
-          value={''}
-          type="button"
-        >
-          All
-        </AllBtn>
-
-        <FollowBtn
-          onClick={(e) => {
-            handleFilter(e.currentTarget.value);
-          }}
-          value={'false'}
-          type="button"
-        >
-          Follow
-        </FollowBtn>
-
-        <FollowingsBtn
-          onClick={(e) => {
-            handleFilter(e.currentTarget.value);
-          }}
-          value={'true'}
-          type="button"
-        >
-          Followings
-        </FollowingsBtn>
+        <DropDown onChange={handleSelectChange}>
+          <option value="">All</option>
+          <option value="false">Follow</option>
+          <option value="true">Following</option>
+        </DropDown>
       </SectionFilters>
     </Wrapper>
   );
