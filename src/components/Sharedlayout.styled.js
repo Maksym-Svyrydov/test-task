@@ -15,7 +15,6 @@ export const Layout = styled.div`
   justify-content: center;
 `;
 export const NavContainer = styled.header`
-  ${'' /* outline: 2px solid tomato; */}
   min-height: 64px;
   position: sticky;
   top: 0;
@@ -34,7 +33,6 @@ export const NavContainer = styled.header`
   background: #ebd8ff;
 `;
 export const NavList = styled.nav`
-  ${'' /* outline: 2px solid green; */}
   width: 100%;
   display: flex;
   justify-content: start;
@@ -50,4 +48,7 @@ export const NavItem = styled.div`
   align-items: center;
   width: 186px;
   height: 50px;
+  &.active {
+    border: 2px solid tomato;
+  }
 `;

@@ -1,13 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useRef } from 'react';
-import {
-  Wrapper,
-  Section,
-  Title,
-  SectionFilters,
-  DropDown,
-  GoBack,
-} from './FilterStarus.styled';
+import { Wrapper, Title, DropDown, GoBack } from './FilterStarus.styled';
 
 export const FilterStarus = ({ handleFilter }) => {
   const location = useLocation();

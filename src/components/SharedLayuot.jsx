@@ -2,13 +2,18 @@ import { Suspense } from 'react';
 import { Outlet, NavLink } from 'react-router-dom';
 import { Layout, NavContainer, NavItem, NavList } from './Sharedlayout.styled';
 import styled from 'styled-components';
+
 const StyledLink = styled(NavLink)`
-  color: black;
+  color: #5736a3;
+  padding: 8px;
 
   &.active {
-    color: #5cd3a8;
+    background: #5736a3;
+    color: #ebd8ff;
+    border-radius: 8px;
   }
 `;
+
 export const SharedLayout = () => {
   return (
     <Layout>
